@@ -1,0 +1,174 @@
+.background-aura-tech {
+  position: fixed;
+  z-index: 0;
+  inset: 0;
+
+  overflow: hidden;
+  pointer-events: none;
+
+  background: var(--color-bg);
+}
+
+.background-aura-tech__board {
+  width: 100%;
+  height: 100%;
+}
+
+.background-aura-tech__traces {
+  fill: none;
+
+  stroke: rgb(155 160 170 / 0.16);
+  stroke-width: 2;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.background-aura-tech__nodes {
+  fill: var(--color-bg);
+
+  stroke: rgb(155 160 170 / 0.22);
+  stroke-width: 1.5;
+}
+
+.background-aura-tech__traces--strong {
+  stroke-width: 3;
+  stroke: rgb(155 160 170 / 0.22);
+}
+
+.background-aura-tech__pads {
+  fill: var(--color-bg);
+  stroke: rgb(155 160 170 / 0.28);
+  stroke-width: 2;
+}
+
+.background-aura-tech::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: rgb(8 9 11 / 0.28);
+}
+
+.background-aura-tech__signals {
+  fill: none;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.background-aura-tech__signal {
+  stroke-width: 3;
+
+  stroke-dasharray: 22 180;
+  stroke-dashoffset: 0;
+
+  opacity: 0;
+
+  animation-name: background-aura-tech-signal-flow;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation:
+    background-aura-tech-signal-flow
+    9s
+    linear
+    infinite;
+}
+
+.background-aura-tech__signal--one {
+  animation-duration: 8.4s;
+  animation-delay: -1.7s;
+  stroke-dasharray: 18 190;
+}
+
+.background-aura-tech__signal--two {
+  animation-duration: 11.2s;
+  animation-delay: -6.3s;
+  stroke-dasharray: 32 210;
+}
+
+.background-aura-tech__signal--three {
+  animation-duration: 7.6s;
+  animation-delay: -4.1s;
+  stroke-dasharray: 14 170;
+}
+
+.background-aura-tech__signal--four {
+  animation-duration: 13.8s;
+  animation-delay: -9.7s;
+  stroke-dasharray: 26 230;
+}
+
+.background-aura-tech__signal--five {
+  animation-duration: 9.5s;
+  animation-delay: -2.8s;
+  stroke-dasharray: 20 200;
+}
+
+.background-aura-tech__signal--cobalt {
+  stroke: var(--color-cobalt);
+
+  filter:
+    drop-shadow(0 0 0.25rem rgb(36 91 255 / 0.7))
+    drop-shadow(0 0 0.6rem rgb(36 91 255 / 0.25));
+}
+
+.background-aura-tech__signal--orange {
+  stroke: var(--color-orange);
+
+  filter:
+    drop-shadow(0 0 0.25rem rgb(198 90 46 / 0.7))
+    drop-shadow(0 0 0.6rem rgb(198 90 46 / 0.25));
+}
+
+.background-aura-tech__signal--one {
+  animation-delay: -1s;
+}
+
+.background-aura-tech__signal--two {
+  animation-delay: -4.5s;
+}
+
+.background-aura-tech__signal--three {
+  animation-delay: -7s;
+}
+
+.background-aura-tech__signal--four {
+  animation-delay: -2.5s;
+}
+
+.background-aura-tech__signal--five {
+  animation-delay: -6s;
+}
+
+@keyframes background-aura-tech-signal-flow {
+  0% {
+    opacity: 0;
+    stroke-dashoffset: 0;
+  }
+
+  8% {
+    opacity: 0.8;
+  }
+
+  32% {
+    opacity: 0.8;
+  }
+
+  42% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    stroke-dashoffset: -220;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .background-aura-tech__signal {
+    animation: none;
+    opacity: 0;
+  }
+}
