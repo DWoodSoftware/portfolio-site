@@ -92,6 +92,11 @@ export function SelectedWork() {
                     </div>
                     
                     <div>
+                        <span>Capacity</span>
+                        <strong>{project.capacity.label}</strong>
+                    </div>
+
+                    <div>
                         <span>Status</span>
                         <strong>{project.status}</strong>
                     </div>

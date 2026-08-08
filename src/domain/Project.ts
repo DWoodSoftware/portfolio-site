@@ -1,4 +1,5 @@
 import type { Technology } from "./Technology";
+import type { WorkCapacity } from "./WorkCapacity";
 
 export interface Project {
     id: string;
@@ -9,6 +10,8 @@ export interface Project {
     focus: string;
     status: string;
     description: string;
+
+    capacity: WorkCapacity;
 
     technologies: readonly Technology[];
 

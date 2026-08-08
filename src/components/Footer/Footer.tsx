@@ -1,4 +1,5 @@
 import "./Footer.css"
+import { Link } from "react-router-dom";
 
 export function Footer() {
     const currentYear = new Date().getFullYear();
@@ -7,10 +8,8 @@ export function Footer() {
         <footer className="site-footer">
             <div className="site-footer__heading">
                 <p>Have something interesting?</p>
-
-                <a href="mailto:davidwoodcontact@gmail.com">
-                    Let's talk.
-                </a>
+                
+                <Link to="/contact">Let's talk.</Link>
             </div>
 
             <div className="site-footer__meta">

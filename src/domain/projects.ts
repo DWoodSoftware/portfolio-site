@@ -1,5 +1,6 @@
 import type { Project } from "./Project";
 import { technologies } from "./technologies";
+import { workCapacities } from "./workCapacities";
 
 export const projects: readonly Project[] = [
   {
@@ -14,6 +15,8 @@ export const projects: readonly Project[] = [
     description:
       "Distributed audio-generation infrastructure combining mobile interfaces, event-driven orchestration and GPU-backed compute.",
 
+    capacity: workCapacities.fullTime,
+    
     technologies: [
       technologies.react,
       technologies.nodejs,
@@ -37,6 +40,8 @@ export const projects: readonly Project[] = [
   description:
     "Scala 3 and Play Framework service built around typed domain modelling, test-driven development and explicit architectural boundaries.",
 
+  capacity: workCapacities.personal,
+
   technologies: [
     technologies.scala,
     technologies.play,
@@ -59,6 +64,8 @@ export const projects: readonly Project[] = [
 
   description:
     "The site you're using: a responsive, accessible frontend with WebGL metaballs, switchable visual systems and fluid design primitives.",
+
+  capacity: workCapacities.personal,
 
   technologies: [
     technologies.react,
