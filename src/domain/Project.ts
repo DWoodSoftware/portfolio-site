@@ -14,4 +14,7 @@ export interface Project {
 
     featured: boolean;
     featuredOrder: number;
+
+    demoUrl?: string;
+    sourceUrl?: string;
 }

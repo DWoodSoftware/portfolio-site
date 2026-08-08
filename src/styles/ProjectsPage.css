@@ -1,0 +1,94 @@
+.projects-page {
+  position: relative;
+
+  width: 100%;
+
+  padding:
+    clamp(8rem, 16vh, 13rem)
+    var(--page-gutter)
+    var(--section-space-lg);
+}
+
+.projects-page__header {
+  width: min(100%, 72rem);
+  margin-inline: auto;
+  margin-bottom: clamp(3rem, 7vh, 5rem);
+
+  display: grid;
+  grid-template-columns:
+    auto
+    minmax(0, 1fr);
+
+  align-items: end;
+  gap: clamp(1.5rem, 4vw, 4rem);
+
+  padding-bottom: clamp(1.5rem, 3vw, 2.5rem);
+
+  border-bottom:
+    0.0625rem
+    solid
+    rgb(255 255 255 / 0.14);
+}
+
+.projects-page__header h1 {
+  margin: 0;
+
+  color: var(--color-text-primary);
+
+  font-size: clamp(2.75rem, 6vw, 5.5rem);
+  font-weight: 700;
+  line-height: 0.88;
+  letter-spacing: -0.05em;
+
+  text-transform: uppercase;
+
+  white-space: nowrap;
+}
+
+.projects-page__header p {
+  margin: 0;
+
+  max-width: none;
+
+  color: var(--color-text-secondary);
+
+  font-size: clamp(1rem, 0.55rem + 1.45vw, 2.1rem);
+
+  font-weight: 450;
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+
+  text-wrap: balance;
+}
+
+.projects-page__list {
+  width: min(100%, 72rem);
+  margin-inline: auto;
+
+  display: grid;
+  gap: clamp(2rem, 5vw, 4rem);
+}
+
+@media (max-width: 48rem) {
+  .projects-page {
+    padding-top: clamp(7rem, 18vh, 9rem);
+  }
+
+  .projects-page__header {
+    grid-template-columns: 1fr;
+
+    gap: 1rem;
+  }
+
+  .projects-page__header p {
+    max-width: 32rem;
+
+    font-size: clamp(1rem, 0.9rem + 0.5vw, 1.2rem);
+
+    line-height: 1.5;
+  }
+
+  .projects-page__header h1 {
+    font-size: clamp(3.5rem, 18vw, 7rem);
+  }
+}

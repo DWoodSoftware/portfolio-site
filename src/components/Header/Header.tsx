@@ -1,4 +1,5 @@
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 interface HeaderProps {
     backgroundVariant: "lava" | "tech";
@@ -14,8 +15,8 @@ export function Header({
             <a className="site-header__brand" href="/" aria-label="David Wood home">DW</a>
 
             <nav className="site-header__nav" aria-label="Primary navigation">
-                <a href="/projects">Project</a>
-                <a href="#contact">Contact</a>
+                <Link to="/projects">Project</Link>
+                <Link to="/#contact">Contact</Link>
 
                 <button
                     className="site-header__background-toggle"

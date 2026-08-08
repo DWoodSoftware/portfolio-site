@@ -67,6 +67,8 @@ export const projects: readonly Project[] = [
     technologies.css,
   ],
 
+  demoUrl: "https://fideron.co.uk",
+
   featured: true,
   featuredOrder: 3,
 },
