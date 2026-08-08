@@ -15,8 +15,8 @@ export function Header({
             <a className="site-header__brand" href="/" aria-label="David Wood home">DW</a>
 
             <nav className="site-header__nav" aria-label="Primary navigation">
-                <Link to="/projects">Project</Link>
-                <Link to="/#contact">Contact</Link>
+                <Link to="/projects">Projects</Link>
+                <Link to="/contact">Contact</Link>
 
                 <button
                     className="site-header__background-toggle"
