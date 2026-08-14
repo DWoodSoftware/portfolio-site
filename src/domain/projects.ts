@@ -35,10 +35,10 @@ export const projects: readonly Project[] = [
   title: "Quarterly Tax Service",
   role: "Software Engineer",
   focus: "Backend architecture",
-  status: "Portfolio project",
+  status: "Live portfolio project",
 
   description:
-    "Scala 3 and Play Framework service built around typed domain modelling, test-driven development and explicit architectural boundaries.",
+    "Production-style scala 3 and Play Framework service built around typed domain modelling, test-driven development and explicit architectural boundaries.",
 
   capacity: workCapacities.personal,
 
@@ -47,10 +47,17 @@ export const projects: readonly Project[] = [
     technologies.play,
     technologies.scalatest,
     technologies.tdd,
+    technologies.docker
   ],
 
   featured: true,
   featuredOrder: 2,
+  
+  demoUrl:
+    "https://dwoodsoftware.github.io/scala-play-quarterly-tax-service/",
+
+  sourceUrl:
+    "https://github.com/DWoodSoftware/scala-play-quarterly-tax-service",
 },
 
 {
