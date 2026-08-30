@@ -4,13 +4,12 @@ export function Hero() {
     return (
         <section className="hero" aria-labelledby="hero-title">
             <h1 id="hero-title" className="hero__title">
-                David 
-                <span>Wood</span>
+                Fideron 
+                <span>Studio</span>
             </h1>
             <div className="hero__intro">
                 <p>
-                    I build production systems, interfaces and infrastructure with a
-                    focus on clarity, performance and resilience.
+                    We engineer production software, enterprise interfaces, and cloud-native infrastructure with a focus on absolute clarity, performance, and operational resilience.
                 </p>
 
                 <a className="hero__cta" href="#work">

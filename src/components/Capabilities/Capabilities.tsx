@@ -33,7 +33,7 @@ export function Capabilities() {
                     id="capabilities-title"
                     className="capabilities__title"
                 >
-                    I like difficult systems, clear architecture and actually shipping the thing.
+                    We specialize in rescuing complex systems, engineering clear architectures, and actually shipping the product.
                 </h2>
             </div>
 

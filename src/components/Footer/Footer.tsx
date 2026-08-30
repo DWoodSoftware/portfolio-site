@@ -13,7 +13,7 @@ export function Footer() {
             </div>
 
             <div className="site-footer__meta">
-                <p>© {currentYear} David Wood</p>
+                <p>© {currentYear} Fideron. Fideron is the trading name of David Wood.</p>
 
                 <nav aria-label="External links">
                     <a 
