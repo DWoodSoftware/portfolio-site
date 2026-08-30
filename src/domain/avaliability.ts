@@ -4,13 +4,11 @@ import { workCapacities } from "./workCapacities";
 export const availability: Availability = {
   status: "available",
 
-  headline: "Currently open to new opportunities.",
+  headline: "Fideron is currently available for Q3/Q4 technical engagements and project delivery.",
 
   capacities: [
     workCapacities.fullTime,
-    workCapacities.partTime,
     workCapacities.contract,
-    workCapacities.temporary,
   ],
 
   locations: [
@@ -20,6 +18,5 @@ export const availability: Availability = {
   workingModels: [
     "Remote",
     "Hybrid",
-    "On-site",
   ],
 };
