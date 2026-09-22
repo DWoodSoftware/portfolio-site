@@ -15,7 +15,8 @@ export function ProjectsPage() {
         </h1>
 
         <p>
-          A growing collection of production systems, experiments and portfolio work.
+          A growing collection of production systems, developer tools, experiments
+          and technical rabbit holes.
         </p>
       </header>
 

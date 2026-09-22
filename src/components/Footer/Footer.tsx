@@ -13,7 +13,7 @@ export function Footer() {
             </div>
 
             <div className="site-footer__meta">
-                <p>© {currentYear} Fideron. Fideron is the trading name of David Wood.</p>
+                <p>© {currentYear} David Wood · DWoodSoftware</p>
 
                 <nav aria-label="External links">
                     <a 
@@ -21,7 +21,7 @@ export function Footer() {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        Github
+                        GitHub
                     </a>
 
                     <a

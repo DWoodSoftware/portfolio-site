@@ -5,15 +5,15 @@ import { workCapacities } from "./workCapacities";
 export const projects: readonly Project[] = [
   {
     id: "coreforge-audio",
-    index: "01",
+    index: "02",
 
     title: "CoreForge Audio",
-    role: "CTO / Lead Engineer",
+    role: "Former CTO / Lead Engineer",
     focus: "Distributed audio infrastructure",
     status: "Production system",
 
     description:
-      "Distributed audio-generation infrastructure combining mobile interfaces, event-driven orchestration and GPU-backed compute.",
+      "Distributed audio-generation infrastructure I led as CTO, combining mobile interfaces, event-driven orchestration and GPU-backed compute.",
 
     capacity: workCapacities.fullTime,
     
@@ -25,20 +25,20 @@ export const projects: readonly Project[] = [
     ],
 
     featured: true,
-    featuredOrder: 1,
+    featuredOrder: 2,
   },
 
   {
   id: "quarterly-tax-service",
-  index: "02",
+  index: "03",
 
   title: "Quarterly Tax Service",
   role: "Software Engineer",
   focus: "Backend architecture",
-  status: "Live portfolio project",
+  status: "Active project",
 
   description:
-    "Production-style scala 3 and Play Framework service built around typed domain modelling, test-driven development and explicit architectural boundaries.",
+    "Production-style Scala 3 and Play Framework service built around typed domain modelling, test-driven development and explicit architectural boundaries.",
 
   capacity: workCapacities.personal,
 
@@ -51,7 +51,7 @@ export const projects: readonly Project[] = [
   ],
 
   featured: true,
-  featuredOrder: 2,
+  featuredOrder: 3,
   
   demoUrl:
     "https://dwoodsoftware.github.io/scala-play-quarterly-tax-service/",
@@ -62,15 +62,15 @@ export const projects: readonly Project[] = [
 
 {
   id: "portfolio",
-  index: "03",
+  index: "04",
 
-  title: "Portfolio",
+  title: "DWoodSoftware Portfolio",
   role: "Designer / Engineer",
   focus: "Frontend engineering",
   status: "Active",
 
   description:
-    "The site you're using: a responsive, accessible frontend with WebGL metaballs, switchable visual systems and fluid design primitives.",
+    "My personal engineering site: a responsive React frontend built around accessibility, WebGL visual systems and a deliberately custom design language.",
 
   capacity: workCapacities.personal,
 
@@ -84,7 +84,32 @@ export const projects: readonly Project[] = [
   demoUrl: "https://fideron.co.uk",
 
   featured: true,
-  featuredOrder: 3,
+  featuredOrder: 4,
+},
+{
+  id: "devflow",
+  index: "01",
+
+  title: "DevFlow",
+  role: "Creator / Software Engineer",
+  focus: "Developer tooling and workflow orchestration",
+  status: "In development",
+
+  description:
+    "A development-cycle control surface for modelling issues, blockers, dependencies, pull requests, integrations and automation across software projects.",
+
+  capacity: workCapacities.personal,
+
+  technologies: [
+    technologies.react,
+    technologies.typescript,
+  ],
+
+  sourceUrl:
+    "https://github.com/DWoodSoftware/project-devflow",
+
+  featured: true,
+  featuredOrder: 1,
 },
 ];
 

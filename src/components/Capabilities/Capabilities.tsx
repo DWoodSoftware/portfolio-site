@@ -33,7 +33,8 @@ export function Capabilities() {
                     id="capabilities-title"
                     className="capabilities__title"
                 >
-                    We specialize in rescuing complex systems, engineering clear architectures, and actually shipping the product.
+                    I build, break and fix systems — turning messy requirements into clear
+                    architecture and software that actually ships.
                 </h2>
             </div>
 
