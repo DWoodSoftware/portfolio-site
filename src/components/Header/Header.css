@@ -38,20 +38,20 @@
 .site-header__brand {
   flex-shrink: 0;
 
-  display: grid;
-  place-items: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
-  width: 2.5rem;
-  aspect-ratio: 1;
+  padding: 0.5rem 0.75rem;;
 
   color: var(--color-text-primary);
 
   font-size: 0.8rem;
   font-weight: 700;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.02em;
 
   border: 0.0625rem solid rgb(255 255 255 / 0.14);
-  border-radius: 50%;
+  border-radius: 999rem;
 
   background: rgb(255 255 255 / 0.035);
 
