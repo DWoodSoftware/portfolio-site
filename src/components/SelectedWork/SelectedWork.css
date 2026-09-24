@@ -18,7 +18,7 @@
 .selected-work__eyebrow {
   margin: 0;
 
-  color: var(--color-orange-soft);
+  color: var(--brand-accent-soft);
 
   font-size: clamp(0.75rem, 0.7rem + 0.15vw, 0.9rem);
   font-weight: 600;
@@ -41,7 +41,7 @@
 }
 
 .selected-work__title span {
-  color: var(--color-text-secondary);
+  color: var(--brand-text-secondary);
 }
 
 /* Folder system */
@@ -83,7 +83,7 @@
     0.8rem
     clamp(0.9rem, 2vw, 1.4rem);
 
-  color: var(--color-text-secondary);
+  color: var(--brand-text-secondary);
 
   font-size: clamp(0.75rem, 0.7rem + 0.2vw, 0.95rem);
   font-weight: 600;
@@ -92,7 +92,7 @@
   border:
     0.0625rem
     solid
-    rgb(255 255 255 / 0.14);
+    var(--glass-border);
 
   border-bottom: 0;
 
@@ -105,8 +105,12 @@
   background:
     linear-gradient(
       145deg,
-      rgb(255 255 255 / 0.1),
-      rgb(255 255 255 / 0.045)
+      var(--glass-surface-start),
+      color-mix(
+        in srgb,
+        var(--brand-neutral-light) 4.5%,
+        transparent
+      )
     );
 
   backdrop-filter:
@@ -127,7 +131,7 @@
 }
 
 .selected-work__tab-index {
-  color: var(--color-orange-soft);
+  color: var(--brand-accent-soft);
 
   font-size: 0.78em;
   letter-spacing: 0.08em;
@@ -136,24 +140,42 @@
 .selected-work__tab[aria-selected="true"] {
   z-index: 3;
 
-  color: var(--color-text-primary);
+  color: var(--brand-text-primary);
 
-  border-color: rgb(255 255 255 / 0.34);
+  border-color:
+    color-mix(
+      in srgb,
+      var(--brand-neutral-light) 34%,
+      transparent
+    );
 
   background:
     linear-gradient(
       145deg,
-      rgb(36 91 255 / 0.22),
-      rgb(255 255 255 / 0.10)
+      color-mix(
+        in srgb,
+        var(--brand-primary) 22%,
+        transparent
+      ),
+      color-mix(
+        in srgb,
+        var(--brand-neutral-light) 10%,
+        transparent
+      )
     );
 
   box-shadow:
-    inset 0 0.0625rem 0 rgb(255 255 255 / 0.18),
-    0 -0.15rem 1.25rem rgb(36 91 255 / 0.12);
+    inset 0 0.0625rem 0
+    color-mix(
+      in srgb,
+      var(--brand-neutral-light) 18%,
+      transparent
+    ),
+    0 -0.15rem 1.25rem var(--brand-primary-subtle);
 }
 
 .selected-work__tab:hover {
-  color: var(--color-text-primary);
+  color: var(--brand-text-primary);
 }
 
 .selected-work__tab + .selected-work__tab {
@@ -191,7 +213,11 @@
   border:
     0.0625rem
     solid
-    rgb(255 255 255 / 0.16);
+    color-mix(
+      in srgb,
+      var(--brand-neutral-light) 16%,
+      transparent
+    );
 
   border-radius:
     0
@@ -202,13 +228,31 @@
   background:
     linear-gradient(
       145deg,
-      rgb(255 255 255 / 0.11),
-      rgb(255 255 255 / 0.045)
+      color-mix(
+        in srgb,
+        var(--brand-neutral-light) 11%,
+        transparent
+      ),
+      color-mix(
+        in srgb,
+        var(--brand-neutral-light) 4.5%,
+        transparent
+      )
     );
 
   box-shadow:
-    0 1.5rem 4rem rgb(0 0 0 / 0.24),
-    inset 0 0.0625rem 0 rgb(255 255 255 / 0.1);
+    0 1.5rem 4rem
+    color-mix(
+      in srgb,
+      var(--brand-neutral-dark) 24%,
+      transparent
+    ),
+    inset 0 0.0625rem 0
+    color-mix(
+      in srgb,
+      var(--brand-neutral-light) 10%,
+      transparent
+    );
 
   backdrop-filter:
     blur(2rem)
@@ -246,19 +290,37 @@
     scale(1);
 
   border-color:
-    rgb(255 255 255 / 0.24);
+    color-mix(
+      in srgb,
+      var(--brand-neutral-light) 24%,
+      transparent
+    );
 
   background:
     linear-gradient(
       145deg,
-      rgb(255 255 255 / 0.17),
-      rgb(255 255 255 / 0.07)
+      color-mix(
+        in srgb,
+        var(--brand-neutral-light) 17%,
+        transparent
+      ),
+      color-mix(
+        in srgb,
+        var(--brand-neutral-light) 7%,
+        transparent
+      )
     );
 
   box-shadow:
-    0 2rem 5rem rgb(0 0 0 / 0.34),
-    0 0 4rem rgb(36 91 255 / 0.05),
-    inset 0 0.0625rem 0 rgb(255 255 255 / 0.14);
+    0 2rem 5rem
+    color-mix(
+      in srgb,
+      var(--brand-neutral-dark) 34%,
+      transparent
+    ),
+    0 0 4rem var(--brand-primary-faint),
+    inset 0 0.0625rem 0
+    var(--glass-border);
 }
 
 /*
@@ -281,7 +343,7 @@
 
   max-width: 14ch;
 
-  color: var(--color-text-primary);
+  color: var(--brand-text-primary);
 
   font-size: clamp(2.25rem, 5vw, 5rem);
   font-weight: 700;
@@ -311,7 +373,7 @@
 .selected-work__project-content p {
   margin: 0;
 
-  color: var(--color-text-secondary);
+  color: var(--brand-text-secondary);
 
   font-size: clamp(1rem, 0.9rem + 0.35vw, 1.25rem);
 }
@@ -340,7 +402,7 @@
 
   padding-bottom: 0.35rem;
 
-  color: var(--color-text-primary);
+  color: var(--brand-text-primary);
 
   font-size: clamp(0.8rem, 0.75rem + 0.15vw, 0.9rem);
   font-weight: 600;
@@ -350,7 +412,7 @@
   border-bottom:
     0.125rem
     solid
-    var(--color-orange);
+    var(--brand-accent);
 
   transition:
     color 180ms ease,
@@ -358,7 +420,7 @@
 }
 
 .selected-work__link:hover {
-  color: var(--color-cobalt-soft);
+  color: var(--brand-primary-soft);
   gap: 0.9rem;
 }
 
@@ -369,8 +431,12 @@
 
   padding-block: var(--space-sm);
 
-  border-top: 0.0625rem solid rgb(255 255 255 / 0.1);
-  border-bottom: 0.0625rem solid rgb(255 255 255 / 0.1);
+  border-top:
+    0.0625rem solid
+    var(--glass-surface-start);
+  border-bottom:
+    0.0625rem solid
+    var(--glass-surface-start);
 }
 
 .selected-work__meta div {
@@ -379,7 +445,7 @@
 }
 
 .selected-work__meta span {
-  color: var(--color-orange-soft);
+  color: var(--brand-accent-soft);
 
   font-size: clamp(0.65rem, 0.62rem + 0.1vw, 0.75rem);
   font-weight: 600;
@@ -388,7 +454,7 @@
 }
 
 .selected-work__meta strong {
-  color: var(--color-text-primary);
+  color: var(--brand-text-primary);
 
   font-size: clamp(0.85rem, 0.8rem + 0.2vw, 1rem);
   font-weight: 500;
@@ -403,7 +469,7 @@
 @media (max-width: 48rem) {
   .selected-work__tabs {
     display: grid;
-    grid-template-columns: 
+    grid-template-columns:
         repeat(var(--project-count), minmax(0, 1fr));
 
     gap: 0;

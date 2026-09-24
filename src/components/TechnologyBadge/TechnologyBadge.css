@@ -7,7 +7,7 @@
     0.45rem
     0.7rem;
 
-  color: var(--color-text-secondary);
+  color: var(--brand-text-secondary);
 
   font-size: clamp(0.7rem, 0.67rem + 0.12vw, 0.8rem);
   letter-spacing: 0.04em;
@@ -15,12 +15,20 @@
   border:
     0.0625rem
     solid
-    rgb(255 255 255 / 0.11);
+    color-mix(
+      in srgb,
+      var(--brand-neutral-light) 11%,
+      transparent
+    );
 
   border-radius: 999rem;
 
   background:
-    rgb(255 255 255 / 0.035);
+    color-mix(
+      in srgb,
+      var(--brand-neutral-light) 3.5%,
+      transparent
+    );
 }
 
 .technology-badge__icon {
@@ -32,7 +40,7 @@
   display: grid;
   place-items: center;
 
-  color: var(--color-text-primary)
+  color: var(--brand-text-primary)
 }
 
 .technology-badge__icon svg {

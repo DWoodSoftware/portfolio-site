@@ -1,0 +1,174 @@
+:root {
+  /*
+   * Brand identity
+   *
+   * These values define the visual identity of the site.
+   * Components should consume semantic tokens rather than
+   * referencing brand colours directly.
+   */
+
+  --brand-background: #08090b;
+
+  --brand-surface: #111318;
+  --brand-surface-raised: #171a20;
+
+  --brand-text-primary: #f4f4f2;
+  --brand-text-secondary: #9ba0aa;
+
+  --brand-primary: #245bff;
+  --brand-primary-soft: #5278ff;
+
+  --brand-accent: #c65a2e;
+  --brand-accent-soft: #e1784b;
+
+
+  /*
+   * Derived brand colours
+   */
+
+  --brand-primary-glow:
+    color-mix(
+      in srgb,
+      var(--brand-primary) 45%,
+      transparent
+    );
+
+  --brand-accent-glow:
+    color-mix(
+      in srgb,
+      var(--brand-accent) 65%,
+      transparent
+    );
+
+  --brand-accent-hot: #da693a;
+
+  --brand-accent-core:#ff915c;
+
+  /*
+   * Primary treatments
+   */
+
+  --brand-primary-faint:
+    color-mix(
+      in srgb,
+      var(--brand-primary) 5%,
+      transparent
+    );
+
+  --brand-primary-muted:
+    color-mix(
+      in srgb,
+      var(--brand-primary) 10%,
+      transparent
+    );
+
+  --brand-primary-subtle:
+    color-mix(
+      in srgb,
+      var(--brand-primary) 12%,
+      transparent
+    );
+
+  --brand-primary-medium:
+    color-mix(
+      in srgb,
+      var(--brand-primary) 28%,
+      transparent
+    );
+
+  --brand-primary-border:
+    color-mix(
+      in srgb,
+      var(--brand-primary) 45%,
+      transparent
+    );
+
+  --brand-primary-strong:
+    color-mix(
+      in srgb,
+      var(--brand-primary) 70%,
+      transparent
+    );
+
+
+  /*
+   * Accent treatments
+   */
+
+  --brand-accent-faint:
+    color-mix(
+      in srgb,
+      var(--brand-accent) 6%,
+      transparent
+    );
+
+  --brand-accent-subtle:
+    color-mix(
+      in srgb,
+      var(--brand-accent) 12%,
+      transparent
+    );
+
+  --brand-accent-medium:
+    color-mix(
+      in srgb,
+      var(--brand-accent) 40%,
+      transparent
+    );
+
+  --brand-accent-strong:
+    color-mix(
+      in srgb,
+      var(--brand-accent) 70%,
+      transparent
+    );
+
+  /*
+  * Neutral primitives
+  *
+  * Used to derive translucent surfaces, borders,
+  * highlights and shadows without hardcoding RGB values.
+  */
+
+  --brand-neutral-light: #ffffff;
+  --brand-neutral-dark: #000000;
+
+/*
+ * Glass treatments
+ */
+
+--glass-border:
+  color-mix(
+    in srgb,
+    var(--brand-neutral-light) 14%,
+    transparent
+  );
+
+--glass-surface-start:
+  color-mix(
+    in srgb,
+    var(--brand-neutral-light) 10%,
+    transparent
+  );
+
+--glass-surface-end:
+  color-mix(
+    in srgb,
+    var(--brand-neutral-light) 4%,
+    transparent
+  );
+
+--glass-shadow:
+  color-mix(
+    in srgb,
+    var(--brand-neutral-dark) 22%,
+    transparent
+  );
+
+--glass-highlight:
+  color-mix(
+    in srgb,
+    var(--brand-neutral-light) 10%,
+    transparent
+  );
+}

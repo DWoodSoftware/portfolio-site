@@ -8,7 +8,13 @@
     var(--page-gutter)
     clamp(1.5rem, 3vw, 3rem);
 
-  border-top: 0.0625rem solid rgb(255 255 255 / 0.1);
+  border-top:
+    0.0625rem solid
+    color-mix(
+      in srgb,
+      var(--brand-neutral-light) 10%,
+      transparent
+    );
 }
 
 .site-footer__heading {
@@ -19,7 +25,7 @@
 .site-footer__heading p {
   margin: 0;
 
-  color: var(--color-text-secondary);
+  color: var(--brand-text-secondary);
 
   font-size: clamp(0.8rem, 0.75rem + 0.2vw, 1rem);
   letter-spacing: 0.08em;
@@ -29,7 +35,7 @@
 .site-footer__heading a {
   width: fit-content;
 
-  color: var(--color-text-primary);
+  color: var(--brand-text-primary);
 
   font-size: clamp(2rem, 5vw, 5rem);
   font-weight: 700;
@@ -40,7 +46,7 @@
 }
 
 .site-footer__heading a:hover {
-  color: var(--color-cobalt);
+  color: var(--brand-primary);
 }
 
 .site-footer__meta {
@@ -49,7 +55,7 @@
   justify-content: space-between;
   gap: var(--space-md);
 
-  color: var(--color-text-secondary);
+  color: var(--brand-text-secondary);
 
   font-size: clamp(0.75rem, 0.7rem + 0.15vw, 0.875rem);
 }
@@ -70,7 +76,7 @@
 }
 
 .site-footer__meta a:hover {
-  color: var(--color-orange-soft);
+  color: var(--brand-accent-soft);
 }
 
 @media (max-width: 30rem) {
