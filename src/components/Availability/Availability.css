@@ -40,7 +40,11 @@
 
   box-shadow:
     0 0 1rem
-    rgb(198 90 46 / 0.3);
+    color-mix(
+      in srgb,
+      var(--brand-accent) 30%,
+      transparent
+    );
 }
 
 .availability__status[data-status="unavailable"] {

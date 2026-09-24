@@ -120,7 +120,7 @@
     linear-gradient(
       135deg,
       var(--brand-primary-subtle),
-      rgb(198 90 46 / 0.06)
+      var(--brand-accent-faint)
     );
 
   transform: translateY(-0.0625rem);
