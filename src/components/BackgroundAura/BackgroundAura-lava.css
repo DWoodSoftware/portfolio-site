@@ -6,7 +6,7 @@
   overflow: hidden;
   pointer-events: none;
 
-  background: var(--color-bg);
+  background: var(--brand-background);
 }
 
 .background-aura-lava__canvas {

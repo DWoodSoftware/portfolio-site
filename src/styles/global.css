@@ -1,3 +1,5 @@
+@import "./branding.css";
+
 :root {
   font-family: 
     Inter, 
@@ -8,26 +10,13 @@
     "Segoe UI", 
     sans-serif;
 
-  color: #f4f4f2;
-  background: #08090b;
+  color: var(--brand-text-primary);
+  background: var(--brand-background);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  --color-bg: #08090b;
-  --color-surface: #111318;
-  --color-surface-raised: #171a20;
-
-  --color-text-primary: #f4f4f2;
-  --color-text-secondary: #9ba0aa;
-
-  --color-cobalt: #245bff;
-  --color-cobalt-soft: #5278ff;
-
-  --color-orange: #c65a2e;
-  --color-orange-soft: #e1784b;
 
   --space-xs: clamp(0.5rem, 0.4rem + 0.3vw, 0.75rem);
   --space-sm: clamp(0.75rem, 0.6rem + 0.5vw, 1.25rem);
@@ -54,7 +43,7 @@
 }
 
 html {
-  background: var(--color-bg);
+  background: var(--brand-background);
   color-scheme: dark;
   scroll-behavior: smooth;
 }
@@ -64,8 +53,8 @@ body {
   min-width: 20rem;
   min-height: 100dvh;
 
-  background: var(--color-bg);
-  color: var(--color-text-primary);
+  background: var(--brand-background);
+  color: var(--brand-text-primary);
 
   font-size: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
   line-height: 1.5;
@@ -102,13 +91,13 @@ a {
 }
 
 :focus-visible {
-  outline: 0.1875rem solid var(--color-orange-soft);
+  outline: 0.1875rem solid var(--brand-accent-soft);
   outline-offset: 0.25rem;
 }
 
 ::selection {
-  background: var(--color-cobalt);
-  color: var(--color-text-primary);
+  background: var(--brand-primary);
+  color: var(--brand-text-primary);
 }
 
 #root {

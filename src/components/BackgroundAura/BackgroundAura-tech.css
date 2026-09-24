@@ -6,7 +6,7 @@
   overflow: hidden;
   pointer-events: none;
 
-  background: var(--color-bg);
+  background: var(--brand-background);
 }
 
 .background-aura-tech__board {
@@ -25,7 +25,7 @@
 }
 
 .background-aura-tech__nodes {
-  fill: var(--color-bg);
+  fill: var(--brand-background);
 
   stroke: rgb(155 160 170 / 0.22);
   stroke-width: 1.5;
@@ -37,7 +37,7 @@
 }
 
 .background-aura-tech__pads {
-  fill: var(--color-bg);
+  fill: var(--brand-background);
   stroke: rgb(155 160 170 / 0.28);
   stroke-width: 2;
 }
@@ -107,15 +107,25 @@
 }
 
 .background-aura-tech__signal--cobalt {
-  stroke: var(--color-cobalt);
+  stroke: var(--brand-primary);
 
   filter:
-    drop-shadow(0 0 0.25rem rgb(36 91 255 / 0.7))
-    drop-shadow(0 0 0.6rem rgb(36 91 255 / 0.25));
+    drop-shadow(
+      0 0 0.25rem 
+      var(--brand-primary-strong)
+    )
+    drop-shadow(
+      0 0 0.6rem 
+      color-mix(
+        in srgb,
+        var(--brand-primary) 25%,
+        transparent
+      )
+    );
 }
 
 .background-aura-tech__signal--orange {
-  stroke: var(--color-orange);
+  stroke: var(--brand-accent);
 
   filter:
     drop-shadow(0 0 0.25rem rgb(198 90 46 / 0.7))

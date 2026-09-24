@@ -7,7 +7,7 @@
     0.45rem
     0.7rem;
 
-  color: var(--color-text-secondary);
+  color: var(--brand-text-secondary);
 
   font-size: clamp(0.7rem, 0.67rem + 0.12vw, 0.8rem);
   letter-spacing: 0.04em;
@@ -32,7 +32,7 @@
   display: grid;
   place-items: center;
 
-  color: var(--color-text-primary)
+  color: var(--brand-text-primary)
 }
 
 .technology-badge__icon svg {

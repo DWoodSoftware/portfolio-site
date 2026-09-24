@@ -30,7 +30,7 @@
 }
 
 .hero__title span {
-  color: var(--color-cobalt);
+  color: var(--brand-primary);
 }
 
 .hero__intro {
@@ -42,7 +42,7 @@
   margin-top: clamp(2.5rem, 8vh, 6rem);
   margin-left: auto;
 
-  color: var(--color-text-secondary);
+  color: var(--brand-text-secondary);
 
   font-size: clamp(1rem, 0.9rem + 0.5vw, 1.4rem);
 }
@@ -56,10 +56,10 @@
 
   padding-bottom: 0.3em;
 
-  color: var(--color-text-primary);
+  color: var(--brand-text-primary);
 
   font-size: 0.9em;
   font-weight: 600;
 
-  border-bottom: 0.125rem solid var(--color-orange);
+  border-bottom: 0.125rem solid var(--brand-accent);
 }

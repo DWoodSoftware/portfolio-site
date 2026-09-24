@@ -20,19 +20,23 @@
 
   border-radius: 50%;
 
-  background: var(--color-text-secondary);
+  background: var(--brand-text-secondary);
 }
 
 .availability__status[data-status="available"] {
-  background: var(--color-cobalt-soft);
+  background: var(--brand-primary-soft);
 
   box-shadow:
     0 0 1rem
-    rgb(36 91 255 / 0.35);
+    color-mix(
+      in srgb,
+      var(--brand-primary) 35%,
+      transparent
+    )
 }
 
 .availability__status[data-status="limited"] {
-  background: var(--color-orange-soft);
+  background: var(--brand-accent-soft);
 
   box-shadow:
     0 0 1rem
@@ -40,13 +44,13 @@
 }
 
 .availability__status[data-status="unavailable"] {
-  background: var(--color-text-secondary);
+  background: var(--brand-text-secondary);
 }
 
 .availability__header h1 {
   margin: 0;
 
-  color: var(--color-text-primary);
+  color: var(--brand-text-primary);
 
   font-size: clamp(1.75rem, 4vw, 3.25rem);
   font-weight: 650;
@@ -89,7 +93,7 @@
 }
 
 .availability__item dt {
-  color: var(--color-orange-soft);
+  color: var(--brand-accent-soft);
 
   font-size: clamp(0.65rem, 0.62rem + 0.1vw, 0.75rem);
   font-weight: 600;
@@ -100,7 +104,7 @@
 .availability__item dd {
   margin: 0;
 
-  color: var(--color-text-primary);
+  color: var(--brand-text-primary);
 
   font-size: clamp(0.9rem, 0.85rem + 0.2vw, 1.05rem);
   line-height: 1.5;

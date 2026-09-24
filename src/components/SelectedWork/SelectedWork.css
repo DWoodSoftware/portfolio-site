@@ -18,7 +18,7 @@
 .selected-work__eyebrow {
   margin: 0;
 
-  color: var(--color-orange-soft);
+  color: var(--brand-accent-soft);
 
   font-size: clamp(0.75rem, 0.7rem + 0.15vw, 0.9rem);
   font-weight: 600;
@@ -41,7 +41,7 @@
 }
 
 .selected-work__title span {
-  color: var(--color-text-secondary);
+  color: var(--brand-text-secondary);
 }
 
 /* Folder system */
@@ -83,7 +83,7 @@
     0.8rem
     clamp(0.9rem, 2vw, 1.4rem);
 
-  color: var(--color-text-secondary);
+  color: var(--brand-text-secondary);
 
   font-size: clamp(0.75rem, 0.7rem + 0.2vw, 0.95rem);
   font-weight: 600;
@@ -127,7 +127,7 @@
 }
 
 .selected-work__tab-index {
-  color: var(--color-orange-soft);
+  color: var(--brand-accent-soft);
 
   font-size: 0.78em;
   letter-spacing: 0.08em;
@@ -136,24 +136,28 @@
 .selected-work__tab[aria-selected="true"] {
   z-index: 3;
 
-  color: var(--color-text-primary);
+  color: var(--brand-text-primary);
 
   border-color: rgb(255 255 255 / 0.34);
 
   background:
     linear-gradient(
       145deg,
-      rgb(36 91 255 / 0.22),
+      color-mix(
+        in srgb,
+        var(--brand-primary) 22%,
+        transparent
+      ),
       rgb(255 255 255 / 0.10)
     );
 
   box-shadow:
     inset 0 0.0625rem 0 rgb(255 255 255 / 0.18),
-    0 -0.15rem 1.25rem rgb(36 91 255 / 0.12);
+    0 -0.15rem 1.25rem var(--brand-primary-subtle);
 }
 
 .selected-work__tab:hover {
-  color: var(--color-text-primary);
+  color: var(--brand-text-primary);
 }
 
 .selected-work__tab + .selected-work__tab {
@@ -257,7 +261,7 @@
 
   box-shadow:
     0 2rem 5rem rgb(0 0 0 / 0.34),
-    0 0 4rem rgb(36 91 255 / 0.05),
+    0 0 4rem var(--brand-primary-faint),
     inset 0 0.0625rem 0 rgb(255 255 255 / 0.14);
 }
 
@@ -281,7 +285,7 @@
 
   max-width: 14ch;
 
-  color: var(--color-text-primary);
+  color: var(--brand-text-primary);
 
   font-size: clamp(2.25rem, 5vw, 5rem);
   font-weight: 700;
@@ -311,7 +315,7 @@
 .selected-work__project-content p {
   margin: 0;
 
-  color: var(--color-text-secondary);
+  color: var(--brand-text-secondary);
 
   font-size: clamp(1rem, 0.9rem + 0.35vw, 1.25rem);
 }
@@ -340,7 +344,7 @@
 
   padding-bottom: 0.35rem;
 
-  color: var(--color-text-primary);
+  color: var(--brand-text-primary);
 
   font-size: clamp(0.8rem, 0.75rem + 0.15vw, 0.9rem);
   font-weight: 600;
@@ -350,7 +354,7 @@
   border-bottom:
     0.125rem
     solid
-    var(--color-orange);
+    var(--brand-accent);
 
   transition:
     color 180ms ease,
@@ -358,7 +362,7 @@
 }
 
 .selected-work__link:hover {
-  color: var(--color-cobalt-soft);
+  color: var(--brand-primary-soft);
   gap: 0.9rem;
 }
 
@@ -379,7 +383,7 @@
 }
 
 .selected-work__meta span {
-  color: var(--color-orange-soft);
+  color: var(--brand-accent-soft);
 
   font-size: clamp(0.65rem, 0.62rem + 0.1vw, 0.75rem);
   font-weight: 600;
@@ -388,7 +392,7 @@
 }
 
 .selected-work__meta strong {
-  color: var(--color-text-primary);
+  color: var(--brand-text-primary);
 
   font-size: clamp(0.85rem, 0.8rem + 0.2vw, 1rem);
   font-weight: 500;

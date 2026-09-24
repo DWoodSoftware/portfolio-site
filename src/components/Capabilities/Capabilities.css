@@ -18,7 +18,7 @@
 .capabilities__title {
   margin: 0;
 
-  color: var(--color-text-primary);
+  color: var(--brand-text-primary);
 
   font-size: clamp(2rem, 4.5vw, 4.5rem);
   font-weight: 600;
@@ -48,7 +48,7 @@
 }
 
 .capabilities__index {
-  color: var(--color-orange-soft);
+  color: var(--brand-accent-soft);
 
   font-size: clamp(0.7rem, 0.66rem + 0.1vw, 0.8rem);
   font-weight: 600;
@@ -58,7 +58,7 @@
 .capabilities__item h3 {
   margin: 0;
 
-  color: var(--color-text-primary);
+  color: var(--brand-text-primary);
 
   font-size: clamp(1.25rem, 2vw, 1.75rem);
   font-weight: 600;
@@ -70,7 +70,7 @@
 
   max-width: 32rem;
 
-  color: var(--color-text-secondary);
+  color: var(--brand-text-secondary);
 
   font-size: clamp(0.95rem, 0.9rem + 0.2vw, 1.1rem);
   line-height: 1.65;

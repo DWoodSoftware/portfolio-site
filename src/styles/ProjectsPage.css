@@ -33,7 +33,7 @@
 .projects-page__header h1 {
   margin: 0;
 
-  color: var(--color-text-primary);
+  color: var(--brand-text-primary);
 
   font-size: clamp(2.75rem, 6vw, 5.5rem);
   font-weight: 700;
@@ -50,7 +50,7 @@
 
   max-width: none;
 
-  color: var(--color-text-secondary);
+  color: var(--brand-text-secondary);
 
   font-size: clamp(1rem, 0.55rem + 1.45vw, 2.1rem);
 
