@@ -68,12 +68,20 @@
   border-top:
     0.0625rem
     solid
-    rgb(255 255 255 / 0.1);
+    color-mix(
+      in srgb,
+      var(--brand-neutral-light) 10%,
+      transparent
+    );
 
   border-bottom:
     0.0625rem
     solid
-    rgb(255 255 255 / 0.1);
+    color-mix(
+      in srgb,
+      var(--brand-neutral-light) 10%,
+      transparent
+    );
 }
 
 .availability__item {
@@ -93,7 +101,11 @@
   border-top:
     0.0625rem
     solid
-    rgb(255 255 255 / 0.08);
+    color-mix(
+      in srgb,
+      var(--brand-neutral-light) 8%,
+      transparent
+    );
 }
 
 .availability__item dt {

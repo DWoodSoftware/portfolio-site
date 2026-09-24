@@ -27,7 +27,11 @@
   border-bottom:
     0.0625rem
     solid
-    rgb(255 255 255 / 0.14);
+    color-mix(
+      in srgb,
+      var(--brand-neutral-light) 14%,
+      transparent
+    );
 }
 
 .projects-page__header h1 {

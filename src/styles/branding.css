@@ -122,4 +122,53 @@
       var(--brand-accent) 70%,
       transparent
     );
+
+  /*
+  * Neutral primitives
+  *
+  * Used to derive translucent surfaces, borders,
+  * highlights and shadows without hardcoding RGB values.
+  */
+
+  --brand-neutral-light: #ffffff;
+  --brand-neutral-dark: #000000;
+
+/*
+ * Glass treatments
+ */
+
+--glass-border:
+  color-mix(
+    in srgb,
+    var(--brand-neutral-light) 14%,
+    transparent
+  );
+
+--glass-surface-start:
+  color-mix(
+    in srgb,
+    var(--brand-neutral-light) 10%,
+    transparent
+  );
+
+--glass-surface-end:
+  color-mix(
+    in srgb,
+    var(--brand-neutral-light) 4%,
+    transparent
+  );
+
+--glass-shadow:
+  color-mix(
+    in srgb,
+    var(--brand-neutral-dark) 22%,
+    transparent
+  );
+
+--glass-highlight:
+  color-mix(
+    in srgb,
+    var(--brand-neutral-light) 10%,
+    transparent
+  );
 }

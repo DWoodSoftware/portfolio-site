@@ -5,8 +5,22 @@
     var(--section-space-md)
     var(--page-gutter);
 
-  border-top: 0.0625rem solid rgb(255 255 255 / 0.08);
-  border-bottom: 0.0625rem solid rgb(255 255 255 / 0.08);
+  border-top:
+    0.0625rem
+    solid
+    color-mix(
+      in srgb,
+      var(--brand-neutral-light) 8%,
+      transparent
+    );
+  border-bottom:
+    0.0625rem
+    solid
+    color-mix(
+      in srgb,
+      var(--brand-neutral-light) 8%,
+      transparent
+    );
 }
 
 .capabilities__intro {
@@ -44,7 +58,14 @@
 }
 
 .capabilities__item + .capabilities__item {
-  border-left: 0.0625rem solid rgb(255 255 255 / 0.08);
+  border-left:
+    0.0625rem
+    solid
+    color-mix(
+      in srgb,
+      var(--brand-neutral-light) 8%,
+      transparent
+    );
 }
 
 .capabilities__index {
@@ -87,6 +108,13 @@
 
   .capabilities__item + .capabilities__item {
     border-left: 0;
-    border-top: 0.0625rem solid rgb(255 255 255 / 0.08);
+    border-top:
+      0.0625rem
+      solid
+      color-mix(
+        in srgb,
+        var(--brand-neutral-light) 8%,
+        transparent
+      );
   }
 }

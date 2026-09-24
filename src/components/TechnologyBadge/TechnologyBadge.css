@@ -15,12 +15,20 @@
   border:
     0.0625rem
     solid
-    rgb(255 255 255 / 0.11);
+    color-mix(
+      in srgb,
+      var(--brand-neutral-light) 11%,
+      transparent
+    );
 
   border-radius: 999rem;
 
   background:
-    rgb(255 255 255 / 0.035);
+    color-mix(
+      in srgb,
+      var(--brand-neutral-light) 3.5%,
+      transparent
+    );
 }
 
 .technology-badge__icon {

@@ -17,7 +17,11 @@
 .background-aura-tech__traces {
   fill: none;
 
-  stroke: rgb(155 160 170 / 0.16);
+  stroke: color-mix(
+            in srgb,
+            var(--brand-text-secondary) 16%,
+            transparent
+          );
   stroke-width: 2;
 
   stroke-linecap: round;
@@ -27,18 +31,30 @@
 .background-aura-tech__nodes {
   fill: var(--brand-background);
 
-  stroke: rgb(155 160 170 / 0.22);
+  stroke: color-mix(
+            in srgb,
+            var(--brand-text-secondary) 22%,
+            transparent
+          );
   stroke-width: 1.5;
 }
 
 .background-aura-tech__traces--strong {
   stroke-width: 3;
-  stroke: rgb(155 160 170 / 0.22);
+  stroke: color-mix(
+            in srgb,
+            var(--brand-text-secondary) 22%,
+            transparent
+          );
 }
 
 .background-aura-tech__pads {
   fill: var(--brand-background);
-  stroke: rgb(155 160 170 / 0.28);
+  stroke: color-mix(
+            in srgb,
+            var(--brand-text-secondary) 28%,
+            transparent
+          );
   stroke-width: 2;
 }
 
@@ -48,7 +64,12 @@
     position: absolute;
     inset: 0;
 
-    background: rgb(8 9 11 / 0.28);
+    background:
+      color-mix(
+        in srgb,
+        var(--brand-background) 28%,
+        transparent
+      );
 }
 
 .background-aura-tech__signals {
@@ -111,11 +132,11 @@
 
   filter:
     drop-shadow(
-      0 0 0.25rem 
+      0 0 0.25rem
       var(--brand-primary-strong)
     )
     drop-shadow(
-      0 0 0.6rem 
+      0 0 0.6rem
       color-mix(
         in srgb,
         var(--brand-primary) 25%,
@@ -129,11 +150,11 @@
 
   filter:
     drop-shadow(
-      0 0 0.25rem 
+      0 0 0.25rem
       var(--brand-accent-strong)
     )
     drop-shadow(
-      0 0 0.6rem 
+      0 0 0.6rem
       color-mix(
         in srgb,
         var(--brand-accent) 25%,
