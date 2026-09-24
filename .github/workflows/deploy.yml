@@ -24,9 +24,6 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    env:
-      VITE_FORMSPREE_FORM_ID: ${{ vars.VITE_FORMSPREE_FORM_ID }}
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -39,13 +36,6 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-
-      - name: Verify Formspree configuration
-        run: |
-          if [ -z "$VITE_FORMSPREE_FORM_ID" ]; then
-            echo "VITE_FORMSPREE_FORM_ID is missing"
-            exit 1
-          fi
 
       - name: Build
         run: npm run build
