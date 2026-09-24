@@ -12,7 +12,7 @@ export function Header({
 }: HeaderProps) {
     return (
         <header className="site-header">
-            <a className="site-header__brand" href="/" aria-label="DWoodSoftware Home">DWoodSoftware</a>
+            <Link className="site-header__brand" to="/" aria-label="DWoodSoftware Home">DWoodSoftware</Link>
 
             <nav className="site-header__nav" aria-label="Primary navigation">
                 <Link to="/projects">Projects</Link>
